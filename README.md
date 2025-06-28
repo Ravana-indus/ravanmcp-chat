@@ -1,10 +1,10 @@
 # RavanOS Chat
 
-An intelligent AI-powered chat system integrated with RavanOS business management platform, featuring GPT-4o-mini, session management, and real-time data access.
+An intelligent AI-powered chat system integrated with RavanOS business management platform, featuring GPT-4o, session management, and real-time data access.
 
 ## 🚀 Features
 
-- **🧠 AI-Powered**: GPT-4o-mini intelligence for natural conversations
+- **🧠 AI-Powered**: GPT-4o intelligence for advanced reasoning and natural conversations
 - **💾 Session Management**: Persistent chat history with SQLite database
 - **🎨 Rich Formatting**: Beautiful markdown responses with syntax highlighting
 - **🔍 RavanOS Integration**: Live access to business data through MCP protocol

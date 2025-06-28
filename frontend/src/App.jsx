@@ -91,12 +91,13 @@ function App() {
         role: 'assistant',
         content: `# Welcome to RavanOS Chat! 🚀
 
-I'm your intelligent business assistant, here to help you with your RavanOS system. I can:
+I'm your intelligent business assistant powered by GPT-4o, here to help you with your RavanOS system. I can:
 
 - **📋 List DocTypes** - Show all available document types
 - **🔍 Search Documents** - Find customers, items, orders, etc.
 - **📊 Generate Reports** - Run various business reports
 - **✏️ Create & Update** - Manage documents and records
+- **🧠 Advanced Analysis** - Provide deep business insights with enhanced reasoning
 
 *Try asking me: "List all doctypes" or "Show me recent sales orders"*`,
         timestamp: new Date()
@@ -118,7 +119,7 @@ I'm your intelligent business assistant, here to help you with your RavanOS syst
           role: 'assistant',
           content: `# Welcome back! 👋
 
-I'm ready to help you with your RavanOS system. What would you like to work on today?`,
+I'm your GPT-4o powered assistant, ready to help you with your RavanOS system. What would you like to work on today?`,
           timestamp: new Date()
         }]);
       } else {
@@ -356,7 +357,7 @@ I'm ready to help you with your RavanOS system. What would you like to work on t
             )}
           </div>
           <div className="header-subtitle">
-            Powered by GPT-4o-mini • RavanOS Integration • Session Management
+            Powered by GPT-4o • RavanOS Integration • Session Management
           </div>
         </div>
 
@@ -366,7 +367,7 @@ I'm ready to help you with your RavanOS system. What would you like to work on t
               <h2>🚀 Welcome to RavanOS Chat!</h2>
               <p>Your intelligent business companion includes:</p>
               <ul>
-                <li>🧠 <strong>AI-Powered</strong> - GPT-4o-mini intelligence</li>
+                <li>🧠 <strong>AI-Powered</strong> - GPT-4o intelligence</li>
                 <li>💾 <strong>Session Management</strong> - Persistent chat history</li>
                 <li>🎨 <strong>Rich Formatting</strong> - Beautiful markdown responses</li>
                 <li>🔍 <strong>RavanOS Integration</strong> - Live data access</li>

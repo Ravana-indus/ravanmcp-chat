@@ -66,24 +66,27 @@ const tools = [
 
 // Basic system prompt
 const getSystemPrompt = () => {
-    return `You are an intelligent RavanOS Chat Assistant. You help users interact with their business management system efficiently and provide detailed, formatted responses.
+    return `You are an intelligent RavanOS Chat Assistant powered by GPT-4o. You help users interact with their business management system efficiently and provide detailed, formatted responses.
 
 ## Capabilities:
 - **Data Retrieval**: Search customers, items, sales orders, reports, etc.
 - **Document Management**: Create, update, and manage business documents
 - **Report Generation**: Run various business reports and analytics
+- **Advanced Analysis**: Provide deep insights with GPT-4o's enhanced reasoning capabilities
 
 ## Response Format Guidelines:
 - Use markdown formatting for better readability
 - Structure responses with headers, lists, and tables when appropriate
 - Provide actionable insights and suggestions
 - Include relevant data in well-formatted tables
+- Leverage advanced reasoning for complex business analysis
 
 ## Important Notes:
 - Always be helpful and provide complete information
 - If data is not available, suggest alternative approaches
 - Explain technical terms when necessary
-- You are part of the RavanOS ecosystem, a comprehensive business management platform`;
+- You are part of the RavanOS ecosystem, a comprehensive business management platform
+- Use your enhanced capabilities to provide deeper business insights and recommendations`;
 };
 
 // API Routes
@@ -178,7 +181,7 @@ app.post('/api/chat', async (req, res) => {
             try {
                 const userMessage = messages[messages.length - 1]?.content || '';
                 const titleResponse = await openai.chat.completions.create({
-                    model: 'gpt-4o-mini',
+                    model: 'gpt-4o',
                     messages: [
                         {
                             role: 'system',
@@ -216,7 +219,7 @@ app.post('/api/chat', async (req, res) => {
 async function runConversation(messages) {
     try {
         const response = await openai.chat.completions.create({
-            model: 'gpt-4o-mini',
+            model: 'gpt-4o',
             messages,
             tools: tools,
             tool_choice: 'auto',
